@@ -1,0 +1,27 @@
+﻿<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body>
+    
+    <h1>WunderVision NodeJS Webpage</h1>
+    <input id="testCtrl" type="checkbox">
+    <script src="/node_modules/socket.io-client/dist/socket.io.js"></script>
+    <script>
+        var socket = io(); //load socket.io-client and connect to the host that serves the page
+        window.addEventListener("load", function () { //when page loads
+            var lightbox = document.getElementById("testCtrl");
+            lightbox.addEventListener("change", function () { //add event listener for when checkbox changes
+                socket.emit("testCtrl", Number(this.checked)); //send button status to server (as 1 or 0)
+            });
+        });
+        socket.on('testCtrl', function (data) { //get button status from client
+            document.getElementById("testCtrl").checked = data; //change checkbox according to data from the server
+        });
+    </script>
+
+</body>
+</html>
