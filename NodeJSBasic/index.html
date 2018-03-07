@@ -3,25 +3,60 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
     <meta charset="utf-8" />
-    <title></title>
+    <title>WunderVision NodeJS</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/mystyles.css">
 </head>
-<body>
-    
-    <h1>WunderVision NodeJS Webpage</h1>
-    <input id="testCtrl" type="checkbox">
+<body class="subbg-color">
+
+    <div class="container-fluid">
+        <div class="row bg-color">
+            <h1><span class="wundervision-blue">Wunder</span><span class="wundervision-yellow">Vision</span></h1>
+        </div>
+        <div class="row">Hello <span id="address"></span></div>
+        <div class="row" id="information">Welcome!</div>
+        <div class="row">
+            <div class="col-md-3">
+                <h4>
+                    Black
+                    <input id="blackCheck" type="radio">
+                </h4>
+            </div>
+            <div class="col-md-3">
+                <h4>
+                    Blue
+                    <input id="blueCheck" type="radio">
+                </h4>
+            </div>
+            <div class="col-md-3">
+                <h4>
+                    Red
+                    <input id="redCheck" type="radio">
+                </h4>
+            </div>
+            <div class="col-md-3">
+                <h4>
+                    Green
+                    <input id="greenCheck" type="radio">
+                </h4>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-2"></div>
+            <div class="col-lg-6">
+                <canvas class="canvas-color" id="playingfield"
+                        onmousedown="onMouseDown(event)"
+                        onmousemove="onMouseMove(event)"
+                        onmouseout="onMouseLeave(event)"
+                        onmouseup="onMouseUp(event)"
+                        width="1080" height="1080"></canvas>
+            </div>
+        </div>
+    </div>
+
+
     <script src="/node_modules/socket.io-client/dist/socket.io.js"></script>
-    <script>
-        var socket = io(); //load socket.io-client and connect to the host that serves the page
-        window.addEventListener("load", function () { //when page loads
-            var lightbox = document.getElementById("testCtrl");
-            lightbox.addEventListener("change", function () { //add event listener for when checkbox changes
-                socket.emit("testCtrl", Number(this.checked)); //send button status to server (as 1 or 0)
-            });
-        });
-        socket.on('testCtrl', function (data) { //get button status from client
-            document.getElementById("testCtrl").checked = data; //change checkbox according to data from the server
-        });
-    </script>
+    <script src="/ClientScripts.js"></script>
 
 </body>
 </html>

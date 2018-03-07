@@ -1,0 +1,19 @@
+.wundervision-blue {
+    color : blue;
+}
+.wundervision-yellow {
+    color : yellow;
+}
+.bg-color {
+    background-color: black;
+}
+.subbg-color {
+    background-color: rgb(29, 29, 29);
+	color: rgb(255,255,255);
+}
+.canvas-color {
+    background-color: rgb(255, 255, 255);
+}
+.button-pad {
+    margin: 10pt;
+}
