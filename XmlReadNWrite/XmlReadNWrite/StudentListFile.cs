@@ -21,7 +21,7 @@ namespace XmlReadNWrite
         public string Time { get; set; }
 
         [XmlArray("Students"), XmlArrayItem("Student")]
-        public List<Student> Students;
+        public List<Student> Students { get; set; }
     }
 
     public class Student
