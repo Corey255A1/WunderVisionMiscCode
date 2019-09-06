@@ -12,7 +12,8 @@
     <Name>ImageFinder</Name>
     <RootNamespace>ImageFinder</RootNamespace>
     <LaunchProvider>Standard Python launcher</LaunchProvider>
-    <CommandLineArguments>-r "K:\ReneeBackup\Photos\Photos 2003_2016 (Thumbnails)\2010\Las Vegas with Dad\UNADJUSTEDNONRAW_thumb_1c15.jpg" "K:\ReneeBackup\Photos\Originals_2003-2016"</CommandLineArguments>
+    <CommandLineArguments>
+    </CommandLineArguments>
     <EnableNativeCodeDebugging>False</EnableNativeCodeDebugging>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
