@@ -31,5 +31,8 @@ namespace XmlReadNWrite
 
         [XmlAttribute("lastname")]
         public string LastName { get; set; }
+
+        [XmlAttribute("studentid")]
+        public int StudentID { get; set; }
     }
 }

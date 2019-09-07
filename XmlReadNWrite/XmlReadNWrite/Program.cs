@@ -14,8 +14,8 @@ namespace XmlReadNWrite
                     Time = "0700",
                     Students = new List<Student>()
                     {
-                        new Student(){FirstName="Joanna", LastName="Johnson"},
-                        new Student(){FirstName="Frederick", LastName="Lemowitz"}
+                        new Student(){FirstName="Joanna", LastName="Johnson", StudentID=556825},
+                        new Student(){FirstName="Frederick", LastName="Lemowitz", StudentID=567864}
                     }
                 },
                 new Class()
@@ -24,8 +24,8 @@ namespace XmlReadNWrite
                     Time = "0800",
                     Students = new List<Student>()
                     {
-                        new Student(){FirstName="Bobby", LastName="Villanova"},
-                        new Student(){FirstName="Sandra", LastName="Thomson"}
+                        new Student(){FirstName="Bobby", LastName="Villanova", StudentID=568845},
+                        new Student(){FirstName="Sandra", LastName="Thomson", StudentID=574568}
                     }
                 }
             };
@@ -40,12 +40,9 @@ namespace XmlReadNWrite
                 Console.WriteLine($"Class {c.Name} at {c.Time}");
                 foreach(Student s in c.Students)
                 {
-                    Console.WriteLine($"- Student {s.FirstName} {s.LastName}");
+                    Console.WriteLine($"- Student {s.FirstName} {s.LastName} ID:{s.StudentID}");
                 }
             }
-
-
-
         }
     }
 }
