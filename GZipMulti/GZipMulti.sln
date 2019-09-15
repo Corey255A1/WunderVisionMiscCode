@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.28922.388
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GZipMulti", "GZipMulti\GZipMulti.csproj", "{FFE21E17-EDA1-4A11-887C-C20B44456598}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GZipMultiLib", "GZipMultiLib\GZipMultiLib.csproj", "{1D1641AC-C6A0-4E77-9AB1-C00E780EFD99}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{FFE21E17-EDA1-4A11-887C-C20B44456598}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FFE21E17-EDA1-4A11-887C-C20B44456598}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FFE21E17-EDA1-4A11-887C-C20B44456598}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FFE21E17-EDA1-4A11-887C-C20B44456598}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1D1641AC-C6A0-4E77-9AB1-C00E780EFD99}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1D1641AC-C6A0-4E77-9AB1-C00E780EFD99}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1D1641AC-C6A0-4E77-9AB1-C00E780EFD99}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1D1641AC-C6A0-4E77-9AB1-C00E780EFD99}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {914FDE38-7A9A-4E59-9CF8-2B8487463292}
+	EndGlobalSection
+EndGlobal
