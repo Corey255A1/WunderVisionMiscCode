@@ -73,7 +73,7 @@ namespace GZipMultiLib
                                 byte[] fileBytes = new byte[filesizeInt];
                                 decomp.Read(fileBytes, 0, fileBytes.Length);
 
-                                File.WriteAllBytes(outputfolder + filename, fileBytes);
+                                File.WriteAllBytes(Path.Combine(outputfolder,filename), fileBytes);
                             }
                         }
                     }
